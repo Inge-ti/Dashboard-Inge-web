@@ -47,10 +47,11 @@ namespace Inge_Dashboard.Web.Areas.Identity.Pages.Account
             public string Email { get; set; }
 
             [Required]
+            [Display(Name =("Contraseña"))]
             [DataType(DataType.Password)]
             public string Password { get; set; }
 
-            [Display(Name = "Remember me?")]
+            [Display(Name = "Recordar?")]
             public bool RememberMe { get; set; }
         }
 
