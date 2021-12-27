@@ -1,6 +1,7 @@
 ﻿using Inge_Dashboard.Web.Helpers;
 using Inge_Dashboard.Web.Services;
 using Inge_Dashboard.Web.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -9,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace Inge_Dashboard.Web.Controllers
 {
+    [Authorize]
     public class DashboardClienteController : Controller
     {
         private readonly IResumenLicitService _resumenLicitService;
